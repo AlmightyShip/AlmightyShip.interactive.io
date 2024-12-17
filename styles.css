@@ -126,7 +126,6 @@ p {
     background-color: #ff6f61;
 }
 
-
 @keyframes bounceInUp {
     from,
     60%,
@@ -151,10 +150,41 @@ p {
     }
 
     90% {
-        transform: translate3d(0, -5px, 0);
+        transform: translate3 d(0, -5px, 0);
     }
 
     to {
         transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Адаптивные стили */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #game {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+
+    #next-level-button {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+
+    #start-game-button {
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }
